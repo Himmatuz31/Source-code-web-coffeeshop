@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembayaran</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="tugas.css">
+
+</head>
+
+<body background="img coffee.jpg" size="150">
+    <h1 class=" title "> Payment Coffee Shop
+    </h1>
+    <h1 style="margin-top: 60px; "></h1>
+    <HR>
+    <label>Nama Pemesan</label>
+    <input type="text " id="Pemesan "><br>
+    <label>Menu</label> <select> <option></option>
+    <option value=" Espresso ">Espresso</option>
+    <option value="Americano ">Americano</option>
+    <option value="Macciato ">Macciato</option>
+    <option value="Matematik coffee ">Matematik coffee</option>
+    <option value="Chai Latte ">Chai Latte</option>
+    <option value="Mocca Latte ">Mocca Latte</option>
+    <option value="Choho Coffee ">Choho Coffee</option></select>
+    <hr>
+    <br>
+    <label>sugar</label> <select> <option></option>
+    <option value="Normal">Normal</option><option value="50%">50%</option><option value="0%">0%</option></select>
+    <br>
+    <label>Harga</label> <select> <option></option>
+    <option value="18k ">18k</option>
+    <option value="20k ">20k</option>
+    <option value="22k ">22k</option>
+    <option value="24k ">24k</option>
+    <option value="26k ">26k</option>
+    <option value="27k ">27k</option>
+    <option value="28k ">28k</option></select>
+    <label>Jumlah</label> <input type="number">
+    <hr>
+    <br>
+    <label>Total</label>
+    <textarea id=" total ">
+    </textarea><br>
+    <label>Bayar</label>
+    <textarea id="Bayar "></textarea><br>
+    <hr><br>
+    <button onclick="hasil " () ">proses</button>
+    <button>hapus</button>
+
+    <script type="text/javascript ">
+        function hasil() {
+            var harga = parseInt(document.getElementById('harga').value);
+            var jumlah = parseInt(document.getElementById('jumlah').value);
+            var total = harga * jumlah
+            document.getElementById("total ").innerHTML = total;
+            var bayar;
+            if (total > 100000) {
+                bayar = total - (total * dis);
+                document.getElementById("bayar ").innerHTML = bayar;
+                document.getElementById("dis ").innerHTML;
+            } else {
+                document.getElementById("bayar ").innerHTML = total;
+                document.getElementById("dis ").innerHTML;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
